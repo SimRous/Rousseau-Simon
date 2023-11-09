@@ -1,0 +1,65 @@
+
+.dataRow {
+    padding: 8px;
+    padding-bottom: 0px;
+    scroll-snap-align: start;
+}
+
+.dataContainer {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: top;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.dataContainer .cmdIcon {
+    display: none;
+}
+
+.dataContainer:hover .cmdIcon {
+    display: block;
+}
+
+.dataLayout {
+    display: grid;
+    grid-template-columns: 40px auto;
+    padding: 10px;
+    gap: 8px;
+    align-items: center;
+}
+
+.bookmarkTitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.bookmarkUrl {
+    color: white;
+}
+
+.bookmarkCategory {
+    color: dodgerblue;
+}
+
+.dataCommandPanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.favicon {
+    width: 30px;
+}
+.dataDeleteForm {
+    margin: 20px;
+}
+@media screen and (min-width:650px) {
+
+    .dataLayout {
+        grid-template-columns: 40px auto 150px;
+    }
+}
